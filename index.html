@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"> 
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+        <link rel="stylesheet" href="src/styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <form id="search-form">
+                <div class="form">
+    
+                    <input id="city-input" type="search" placeholder="Enter a city" size="60" autofocus="on"
+                        class="enter-city" />
+    
+                    <button type="submit" class="btn btn-info">Search</button>
+                </div>
+            </form>
+            <br>
+            <br>
+            <div class="btn-sunny">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 id="city">
+    
+                        </h1>
+                        <hr>
+    
+    
+                        <ul>
+                            <li id="date"> </li>
+                        </ul>
+                        <br>
+                        <br>
+                        <br>
+    
+    
+                        <div class="clearfix">
+                            <div class="float-right">
+                                <span class="temperature" id="temperature"></span><span class="units">°C</span>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="col-6">
+    
+    
+                        <h4 id="description">
+    
+                        </h4>
+                        <ul>
+    
+                            <li>
+                                Humidity: <span id="humidity"> </span>%
+                            </li>
+                            <li>
+                                Wind: <span id="wind"> </span>km/h
+                            </li>
+                            <div class="clearfix">
+                                <div style="float: right;">
+                                </div>
+                                <div style="float: right;">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="row" id="cards">
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Sat</h5>
+                            <p class="card-text"><big>21°C</big>
+                                <hr> 19°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Sun</h5>
+                            <p class="card-text"><big>22°C</big>
+                                <hr> 20°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Mon</h5>
+                            <p class="card-text"><big>24°C</big>
+                                <hr> 22°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Tues</h5>
+                            <p class="card-text"> <big>20°</big>
+                                <hr> 19°C</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Wed</h5>
+                            <p class="card-text"><big>18°C</big>
+                                <hr> 17°C</p>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 7rem;">
+    
+                        <div class="card-body">
+                            <h5 class="card-title">Thur</h5>
+                            <p class="card-text"><big>20°C</big>
+                                <hr> 18°C</p>
+    
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+            </div>
+    
+        </div>
+    
+        <script src="src/script.js"></script>
+    </body>
+    
+    </html>
+
+  </body>
+</html>
